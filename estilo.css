@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    box-sizing: border-box;
+  }
+  .padre {
+    position: relative;
+    border-radius: 10px;
+    width: 60%;
+    height: 60vh;
+    background-image: url("https://thumbs.dreamstime.com/b/fondo-azul-suave-abstracto-2031110.jpg");
+    box-sizing: border-box;
+    border: 0.02px solid rgb(198, 199, 199);
+  }
+  #no {
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    top: 70%;
+    right: 15%;
+    background-color: #ce5c63;
+    border: 0.02px solid rgb(219, 136, 136);
+    border-radius: 5%;
+  }
+  #si {
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    top: 70%;
+    left: 15%;
+    background-color: #06d6a0;
+    border: 0.02px solid rgb(28, 196, 104);
+    border-radius: 5%;
+  }
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    display: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  h2 {
+    margin: 10%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  @media (max-width: 800px) {
+    .padre {
+      width: 100%;
+      height: 100%;
+    }
+    .centrar {
+      height: 100vh;
+    }
+  }
